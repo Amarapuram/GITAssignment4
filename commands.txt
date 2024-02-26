@@ -1,4 +1,3 @@
-
 D:\GIT_ASSIGNMENT4>code .
 
 D:\GIT_ASSIGNMENT4>git init
@@ -52,3 +51,122 @@ D:\GIT_ASSIGNMENT4>git log --graph
 D:\GIT_ASSIGNMENT4>git log --oneline --graph
 * 643897b (HEAD -> master) index.html page updated
 * 846f9b3 index.html page added
+
+D:\GIT_ASSIGNMENT4>git branch
+* master
+
+D:\GIT_ASSIGNMENT4>git branch feature
+
+D:\GIT_ASSIGNMENT4>git branch
+  feature
+* master
+
+D:\GIT_ASSIGNMENT4>git checkout feature
+Switched to branch 'feature'
+
+D:\GIT_ASSIGNMENT4>git add .
+
+D:\GIT_ASSIGNMENT4>git commit -m "added user page"
+[feature 64de378] added user page
+ 2 files changed, 93 insertions(+)
+ create mode 100644 commands.txt
+ create mode 100644 user.html
+
+D:\GIT_ASSIGNMENT4>git checkout master
+Switched to branch 'master'
+
+D:\GIT_ASSIGNMENT4>git merge feature
+Updating 643897b..64de378
+Fast-forward
+ commands.txt | 54 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ user.html    | 39 +++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 93 insertions(+)
+ create mode 100644 commands.txt
+ create mode 100644 user.html
+
+D:\GIT_ASSIGNMENT4>git add .
+
+D:\GIT_ASSIGNMENT4>git commit -m "added user page"
+[master 9fd115a] added user page
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+D:\GIT_ASSIGNMENT4>git merge feature
+Already up to date.
+
+D:\GIT_ASSIGNMENT4>git checkout master
+Already on 'master'
+
+D:\GIT_ASSIGNMENT4>git checkout feature
+Switched to branch 'feature'
+
+D:\GIT_ASSIGNMENT4>git add .
+
+D:\GIT_ASSIGNMENT4>git commit -m "updated user page"
+On branch feature
+nothing to commit, working tree clean
+
+D:\GIT_ASSIGNMENT4>git add .
+
+D:\GIT_ASSIGNMENT4>git commit -m "updated user page"
+[feature 6d35385] updated user page
+ 1 file changed, 1 insertion(+)
+
+D:\GIT_ASSIGNMENT4>git checkout master
+Switched to branch 'master'
+
+D:\GIT_ASSIGNMENT4>git add .
+
+D:\GIT_ASSIGNMENT4>git commit -m "updated index page"
+[master 0220006] updated index page
+ 1 file changed, 1 insertion(+)
+
+D:\GIT_ASSIGNMENT4>git branch
+  feature
+* master
+
+D:\GIT_ASSIGNMENT4>git merge feature
+Auto-merging user.html
+Merge made by the 'ort' strategy.
+ user.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+D:\GIT_ASSIGNMENT4>git checkout feature
+Switched to branch 'feature'
+
+D:\GIT_ASSIGNMENT4>git add .
+
+D:\GIT_ASSIGNMENT4>git commit -m "updated user page"
+[feature dbcb51f] updated user page
+ 1 file changed, 79 insertions(+), 2 deletions(-)
+
+D:\GIT_ASSIGNMENT4>git checkout master
+Switched to branch 'master'
+
+D:\GIT_ASSIGNMENT4>git push origin master
+Enumerating objects: 22, done.
+Counting objects: 100% (22/22), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (22/22), 2.43 KiB | 829.00 KiB/s, done.
+Total 22 (delta 11), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (11/11), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Amarapuram/GITAssignment4/pull/new/master
+remote:
+To https://github.com/Amarapuram/GITAssignment4.git
+ * [new branch]      master -> master
+
+D:\GIT_ASSIGNMENT4>git push origin feature
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.10 KiB | 1.10 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Amarapuram/GITAssignment4/pull/new/feature
+remote:
+To https://github.com/Amarapuram/GITAssignment4.git
+ * [new branch]      feature -> feature
