@@ -1,0 +1,54 @@
+
+D:\GIT_ASSIGNMENT4>code .
+
+D:\GIT_ASSIGNMENT4>git init
+Initialized empty Git repository in D:/GIT_ASSIGNMENT4/.git/
+
+D:\GIT_ASSIGNMENT4>git remote add origin https://github.com/Amarapuram/GITAssignment4.git
+
+D:\GIT_ASSIGNMENT4>git add .
+
+D:\GIT_ASSIGNMENT4>git commit -m "index.html page added"
+[master (root-commit) 846f9b3] index.html page added
+ 1 file changed, 42 insertions(+)
+ create mode 100644 index.html
+
+D:\GIT_ASSIGNMENT4>git add .
+
+D:\GIT_ASSIGNMENT4>git commit -m "index.html page updated"
+[master 643897b] index.html page updated
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\GIT_ASSIGNMENT4>git log
+commit 643897b8faf062028584964ba8e38b76d7d7c974 (HEAD -> master)
+Author: Amarapuram Rohit <Amarapuram.Rohit>
+Date:   Mon Feb 26 19:03:27 2024 +0530
+
+    index.html page updated
+
+commit 846f9b305715e6f0dfb73933e9c4eab1d9ba9529
+Author: Amarapuram Rohit <Amarapuram.Rohit>
+Date:   Mon Feb 26 19:03:00 2024 +0530
+
+    index.html page added
+
+D:\GIT_ASSIGNMENT4>git log --oneline
+643897b (HEAD -> master) index.html page updated
+846f9b3 index.html page added
+
+D:\GIT_ASSIGNMENT4>git log --graph
+* commit 643897b8faf062028584964ba8e38b76d7d7c974 (HEAD -> master)
+| Author: Amarapuram Rohit <Amarapuram.Rohit>
+| Date:   Mon Feb 26 19:03:27 2024 +0530
+|
+|     index.html page updated
+|
+* commit 846f9b305715e6f0dfb73933e9c4eab1d9ba9529
+  Author: Amarapuram Rohit <Amarapuram.Rohit>
+  Date:   Mon Feb 26 19:03:00 2024 +0530
+
+      index.html page added
+
+D:\GIT_ASSIGNMENT4>git log --oneline --graph
+* 643897b (HEAD -> master) index.html page updated
+* 846f9b3 index.html page added
